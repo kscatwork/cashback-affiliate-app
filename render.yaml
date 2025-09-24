@@ -10,5 +10,9 @@ services:
         value: production
       - key: JWT_SECRET
         generateValue: true
-      - key: PORT
-        value: 10000
+
+databases:
+  - name: cashback-postgres
+    databaseName: cashback_app
+    user: cashback_user
+    plan: free
